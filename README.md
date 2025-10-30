@@ -41,29 +41,41 @@
 ```
 ### 클라이언트: upper
 ```
-./file_processor_clnt test.txt upper
 1번째 줄 전송...
 1번째 줄 결과 수신: HELLO WORLD
 2번째 줄 전송...
 2번째 줄 결과 수신: THIS IS A WSL TEST FILE
 
+=== 처리 통계 ===
+처리 모드: upper
+처리한 줄 수: 2줄
+소요 시간: 0.000초
+
 ```
 ### 클라이언트: lower
 ```
-./file_processor_clnt test.txt lower
 1번째 줄 전송...
 1번째 줄 결과 수신: hello world
 2번째 줄 전송...
 2번째 줄 결과 수신: this is a wsl test file
 
+=== 처리 통계 ===
+처리 모드: lower
+처리한 줄 수: 2줄
+소요 시간: 0.000초
+
 ```
 ### 클라이언트: reverse
 ```
-./file_processor_clnt test.txt reverse
 1번째 줄 전송...
-1번째 줄 결과 수신: dlroW olleH
+1번째 줄 결과 수신: dlrow olleH
 2번째 줄 전송...
-2번째 줄 결과 수신: eliF tset LSW a si sihT
+2번째 줄 결과 수신: elif tset LSW a si sihT
+
+=== 처리 통계 ===
+처리 모드: reverse
+처리한 줄 수: 2줄
+소요 시간: 0.000초
 
 ```
 ### 서버
