@@ -11,13 +11,56 @@
   - lower: 소문자로 변환
   - reverse: 문자열 뒤집기
 - 사용법
+
+./file_processor_clnt <input_file> <mode>
+
 - <input_file>: 처리할 텍스트 파일의 경로
 - <mode>: count, upper, lower, reverse 중 하나
 
 ## 실행결과
 
 ### 클라이언트: count
+./file_processor_clnt test.txt count
+1번째 줄 전송...
+1번째 줄 결과 수신: Line 1: 11 chars, 2 words
+2번째 줄 전송...
+2번째 줄 결과 수신: Line 2: 26 chars, 4 words
+
+=== 처리 통계 ===
+처리 모드: count
+처리한 줄 수: 2줄
+소요 시간: 0.000초
+
 ### 클라이언트: upper
+./file_processor_clnt test.txt upper
+1번째 줄 전송...
+1번째 줄 결과 수신: HELLO WORLD
+2번째 줄 전송...
+2번째 줄 결과 수신: THIS IS A WSL TEST FILE
+
+
 ### 클라이언트: lower
+./file_processor_clnt test.txt lower
+1번째 줄 전송...
+1번째 줄 결과 수신: hello world
+2번째 줄 전송...
+2번째 줄 결과 수신: this is a wsl test file
+
+
 ### 클라이언트: reverse
+./file_processor_clnt test.txt reverse
+1번째 줄 전송...
+1번째 줄 결과 수신: dlroW olleH
+2번째 줄 전송...
+2번째 줄 결과 수신: eliF tset LSW a si sihT
+
+
 ### 서버
+./file_processor_svr
+서버 시작 대기 중...
+서버 모드 설정: count
+1번째 줄 처리 중...
+2번째 줄 처리 중...
+서버 종료 신호 수신
+서버 종료
+
